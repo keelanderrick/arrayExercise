@@ -184,7 +184,7 @@ Examples:
 
 function removeVowels(str) {
     const vowels = 'aeiou'
-    return [...str].map(function(val) { return val.toLowerCase() }).filter(function(val) { return vowels.indexOf(val) === -1 }).join("");
+    return [...str].toLowerCase().filter(function(val) { return vowels.indexOf(val) === -1 }).join("");
 }
 
 /*
